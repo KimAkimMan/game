@@ -3,7 +3,6 @@
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
 import GameMenu from "@/components/GameMenu";
 import VideoSection from "@/components/VideoSection";
 import CharacterSection from "@/components/CharacterSection";
@@ -23,7 +22,6 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero onSelectGame={handleSelectGame} />
-        <About />
         <GameMenu onSelectGame={handleSelectGame} />
         <VideoSection />
         <CharacterSection

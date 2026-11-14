@@ -1,10 +1,11 @@
-// Auto-generated data file from nyoba_web.html
+import { CharacterStats } from "./types";
 
 export interface CharacterItem {
   category: string;
   image: string;
   name: string;
   feedback: string;
+  stats?: CharacterStats;
 }
 
 export interface FilterOption {
@@ -1521,6 +1522,1130 @@ export const GAME_SECTIONS: Record<string, GameSectionData> = {
     "feedback": "Di kota suci yang bermandikan cahaya fajar itu, sang penenun membelai benang emas dan menjalin takdir. Aglaea sang \"Penenun Emas\", Keturunan Chrysos yang membawa benih api \"Romansa\"... K"
   }
 ]
+  },
+  uma: {
+    id: "uma",
+    title: "Uma Musume Pretty Derby",
+    filters: [
+      { id: "all", label: "Semua" },
+      { id: "turf", label: "Turf (Rumput)" },
+      { id: "dirt", label: "Dirt (Tanah)" },
+      { id: "sprint", label: "Sprint" },
+      { id: "mile", label: "Mile" },
+      { id: "medium", label: "Medium" },
+      { id: "long", label: "Long" },
+      { id: "front-runner", label: "Front Runner" },
+      { id: "pace-runner", label: "Pace Runner" },
+      { id: "late-runner", label: "Late Runner" },
+      { id: "end-runner", label: "End Runner" }
+    ],
+    characters: [
+          {
+                "category": "turf, medium, end-runner",
+                "image": "/uma/admirevega_icon.png",
+                "name": "Admire Vega",
+                "feedback": "Gadis pendiam dan dingin yang memikul beban bayangan kembarannya, mengandalkan lonjakan akhir (End Runner) yang tajam.",
+                "stats": {
+                      "speed": 83,
+                      "stamina": 83,
+                      "power": 90,
+                      "guts": 85,
+                      "wit": 75
+                }
+          },
+          {
+                "category": "turf, dirt, mile, medium, pace-runner, late-runner",
+                "image": "/uma/agnesdigital_icon.png",
+                "name": "Agnes Digital",
+                "feedback": "Otaku Uma Musume sejati yang berlari di lintasan Turf maupun Dirt demi bisa mengagumi sesama Uma Musume dari dekat.",
+                "stats": {
+                      "speed": 91,
+                      "stamina": 81,
+                      "power": 90,
+                      "guts": 85,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner",
+                "image": "/uma/agnestachyon_icon.png",
+                "name": "Agnes Tachyon",
+                "feedback": "Ilmuwan jenius eksentrik yang terobsesi menembus batas kecepatan biologis melalui penelitian dan eksperimen tak terbatas.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 83,
+                      "power": 77,
+                      "guts": 76,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner, late-runner",
+                "image": "/uma/airgroove_icon.png",
+                "name": "Air Groove",
+                "feedback": "Wakil ketua OSIS yang tegas dan berwibawa, berjuluk 'The Empress' yang mendominasi lintasan dengan langkah anggun dan teratur.",
+                "stats": {
+                      "speed": 90,
+                      "stamina": 83,
+                      "power": 85,
+                      "guts": 80,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner, end-runner",
+                "image": "/uma/airshakur_icon.png",
+                "name": "Air Shakur",
+                "feedback": "Ahli logika dan komputasi cerdas yang percaya setiap balapan dapat dipecahkan melalui perhitungan matematis yang sempurna.",
+                "stats": {
+                      "speed": 83,
+                      "stamina": 95,
+                      "power": 98,
+                      "guts": 95,
+                      "wit": 75
+                }
+          },
+          {
+                "category": "turf, sprint, front-runner, pace-runner",
+                "image": "/uma/astonmachan_icon.png",
+                "name": "Aston Machan",
+                "feedback": "Gadis manis dan misterius yang berlari di kategori Sprint agar senyuman dan keberadaannya selalu diingat selamanya.",
+                "stats": {
+                      "speed": 98,
+                      "stamina": 73,
+                      "power": 82,
+                      "guts": 77,
+                      "wit": 87
+                }
+          },
+          {
+                "category": "turf, sprint, mile, late-runner",
+                "image": "/uma/bamboomemory_icon.png",
+                "name": "Bamboo Memory",
+                "feedback": "Pemimpin klub kendo berdarah panas yang selalu mengobarkan semangat membara dan pantang menyerah di trek Sprint/Mile.",
+                "stats": {
+                      "speed": 92,
+                      "stamina": 71,
+                      "power": 89,
+                      "guts": 80,
+                      "wit": 78
+                }
+          },
+          {
+                "category": "turf, sprint, late-runner",
+                "image": "/uma/bikopegasus_icon.png",
+                "name": "Biko Pegasus",
+                "feedback": "Pencinta pahlawan super bertubuh mungil yang memimpikan keadilan dan berlari kencang bagai pahlawan penyelamat.",
+                "stats": {
+                      "speed": 94,
+                      "stamina": 70,
+                      "power": 91,
+                      "guts": 79,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/biwahayahide_icon.png",
+                "name": "Biwa Hayahide",
+                "feedback": "Gadis berkepala dingin nan analitis yang selalu membedah lintasan secara rasional untuk memimpin di posisi terdepan.",
+                "stats": {
+                      "speed": 81,
+                      "stamina": 94,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "dirt, mile, medium, front-runner, pace-runner",
+                "image": "/uma/copanorickey_icon.png",
+                "name": "Copano Rickey",
+                "feedback": "Gadis ceria ahli Feng Shui yang selalu membawa keberuntungan dan kebahagiaan di lintasan Dirt dengan lari terdepan.",
+                "stats": {
+                      "speed": 92,
+                      "stamina": 81,
+                      "power": 82,
+                      "guts": 81,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, sprint, pace-runner",
+                "image": "/uma/currenchan_icon.png",
+                "name": "Curren Chan",
+                "feedback": "Idola media sosial yang memikat hati semua orang dengan pesona manis dan kecepatan sprint secepat kilat.",
+                "stats": {
+                      "speed": 93,
+                      "stamina": 73,
+                      "power": 82,
+                      "guts": 77,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, sprint, mile, late-runner",
+                "image": "/uma/daiichiruby_icon.png",
+                "name": "Daiichi Ruby",
+                "feedback": "Tuan putri anggun dari garis keturunan bangsawan murni yang berlari di jarak Sprint/Mile demi menjaga martabat klan.",
+                "stats": {
+                      "speed": 93,
+                      "stamina": 69,
+                      "power": 90,
+                      "guts": 81,
+                      "wit": 79
+                }
+          },
+          {
+                "category": "turf, mile, front-runner, pace-runner",
+                "image": "/uma/daitakuhelios_icon.png",
+                "name": "Daitaku Helios",
+                "feedback": "Gadis gyaru periang penuh energi yang selalu membawa suasana pesta meriah ke setiap balapan di lintasan Mile.",
+                "stats": {
+                      "speed": 93,
+                      "stamina": 82,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 85
+                }
+          },
+          {
+                "category": "turf, mile, medium, front-runner, pace-runner",
+                "image": "/uma/daiwascarlet_icon.png",
+                "name": "Daiwa Scarlet",
+                "feedback": "Gadis ambisius bertipe Front Runner yang selalu mengincar posisi nomor satu dan menolak kalah dari siapa pun.",
+                "stats": {
+                      "speed": 93,
+                      "stamina": 82,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 85
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/eishinflash_icon.png",
+                "name": "Eishin Flash",
+                "feedback": "Pelari berdarah Jerman yang sangat disiplin, presisi, dan teliti mengatur jadwal latihan serta ritme larinya.",
+                "stats": {
+                      "speed": 84,
+                      "stamina": 90,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, mile, medium, pace-runner, late-runner",
+                "image": "/uma/elcondorpasa_icon.png",
+                "name": "El Condor Pasa",
+                "feedback": "Pegulat bertopeng bersemangat tinggi yang memimpikan kejayaan dunia di panggung balap internasional.",
+                "stats": {
+                      "speed": 91,
+                      "stamina": 81,
+                      "power": 86,
+                      "guts": 81,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, mile, medium, pace-runner",
+                "image": "/uma/finemotion_icon.png",
+                "name": "Fine Motion",
+                "feedback": "Putri bangsawan dari Irlandia yang polos dan ramah, datang ke Tracen Academy untuk merasakan indahnya dunia luar dan ramen.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 81,
+                      "power": 78,
+                      "guts": 77,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, mile, pace-runner",
+                "image": "/uma/fujikiseki_icon.png",
+                "name": "Fuji Kiseki",
+                "feedback": "Senior karismatik nan menawan yang selalu melindungi juniornya layaknya seorang pangeran di atas panggung balap.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 81,
+                      "power": 78,
+                      "guts": 77,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, mile, pace-runner, late-runner",
+                "image": "/uma/goldcity_icon.png",
+                "name": "Gold City",
+                "feedback": "Model profesional berparas menawan yang berjuang keras membuktikan bahwa dirinya bukan sekadar berwajah rupawan di lintasan.",
+                "stats": {
+                      "speed": 89,
+                      "stamina": 82,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, long, end-runner",
+                "image": "/uma/goldship_icon.png",
+                "name": "Gold Ship",
+                "feedback": "Gadis kuda eksentrik penuh kejutan yang berlari dari posisi paling belakang (End Runner) untuk menyapu bersih lawan.",
+                "stats": {
+                      "speed": 77,
+                      "stamina": 96,
+                      "power": 91,
+                      "guts": 89,
+                      "wit": 73
+                }
+          },
+          {
+                "category": "turf, mile, long, pace-runner, late-runner",
+                "image": "/uma/grasswonder_icon.png",
+                "name": "Grass Wonder",
+                "feedback": "Gadis kalem berbusana tradisional yang menyimpan jiwa pejuang perkasa dan akselerasi mematikan saat menyalip musuh.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 95,
+                      "power": 85,
+                      "guts": 86,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "dirt, sprint, late-runner",
+                "image": "/uma/haruurara_icon.png",
+                "name": "Haru Urara",
+                "feedback": "Bintang pujaan berhati murni yang tak pernah putus asa di lintasan Dirt dan selalu menyebarkan tawa ceria.",
+                "stats": {
+                      "speed": 94,
+                      "stamina": 70,
+                      "power": 95,
+                      "guts": 83,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, sprint, pace-runner",
+                "image": "/uma/hishiakebono_icon.png",
+                "name": "Hishi Akebono",
+                "feedback": "Gadis bertubuh tinggi besar berhati lembut yang suka memasak porsi raksasa untuk menyenangkan semua sahabatnya.",
+                "stats": {
+                      "speed": 91,
+                      "stamina": 74,
+                      "power": 83,
+                      "guts": 75,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, mile, medium, end-runner",
+                "image": "/uma/hishiamazon_icon.png",
+                "name": "Hishi Amazon",
+                "feedback": "Pemimpin asrama bergaya preman yang sportif dan protektif, mengandalkan kekuatan murni dari posisi belakang.",
+                "stats": {
+                      "speed": 82,
+                      "stamina": 85,
+                      "power": 89,
+                      "guts": 84,
+                      "wit": 74
+                }
+          },
+          {
+                "category": "dirt, mile, medium, front-runner, pace-runner",
+                "image": "/uma/hokkotarumae_icon.png",
+                "name": "Hokko Tarumae",
+                "feedback": "Duta promosi kota Tomakomai yang selalu mempromosikan kampung halamannya lewat performa gemilang di arena Dirt.",
+                "stats": {
+                      "speed": 96,
+                      "stamina": 82,
+                      "power": 83,
+                      "guts": 79,
+                      "wit": 88
+                }
+          },
+          {
+                "category": "turf, mile, medium, late-runner",
+                "image": "/uma/ikunodictus_icon.png",
+                "name": "Ikuno Dictus",
+                "feedback": "Gadis berkacamata yang sangat tenang, tekun, dan tahan banting, dikenal tak pernah cedera dalam jadwal balap yang padat.",
+                "stats": {
+                      "speed": 84,
+                      "stamina": 77,
+                      "power": 86,
+                      "guts": 81,
+                      "wit": 76
+                }
+          },
+          {
+                "category": "turf, dirt, medium, long, end-runner",
+                "image": "/uma/inarione_icon.png",
+                "name": "Inari One",
+                "feedback": "Gadis lincah berjiwa ksatria Edo yang selalu bersemangat membakar antusiasme penonton di lintasan Dirt dan Turf.",
+                "stats": {
+                      "speed": 77,
+                      "stamina": 96,
+                      "power": 95,
+                      "guts": 93,
+                      "wit": 73
+                }
+          },
+          {
+                "category": "turf, mile, medium, front-runner",
+                "image": "/uma/inesfujin_icon.png",
+                "name": "Ines Fujin",
+                "feedback": "Kakak teladan yang bekerja keras menafkahi adik-adiknya, menguasai taktik lari terdepan dengan tekad baja.",
+                "stats": {
+                      "speed": 92,
+                      "stamina": 78,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, sprint, mile, front-runner, pace-runner",
+                "image": "/uma/ksmiracle_icon.png",
+                "name": "K.S. Miracle",
+                "feedback": "Pelari Sprint berjiwa murni yang percaya pada keajaiban dan mendedikasikan larinya untuk membahagiakan orang lain.",
+                "stats": {
+                      "speed": 98,
+                      "stamina": 73,
+                      "power": 82,
+                      "guts": 77,
+                      "wit": 87
+                }
+          },
+          {
+                "category": "turf, medium, late-runner",
+                "image": "/uma/kawakamiprincess_icon.png",
+                "name": "Kawakami Princess",
+                "feedback": "Gadis bertenaga luar biasa yang bercita-cita menjadi putri sejati meski sering kali merusak barang di sekitarnya.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 79,
+                      "power": 85,
+                      "guts": 80,
+                      "wit": 78
+                }
+          },
+          {
+                "category": "turf, sprint, late-runner",
+                "image": "/uma/kinghalo_icon.png",
+                "name": "King Halo",
+                "feedback": "Nona muda berkelas tinggi yang terus bangkit dari kegagalan untuk membuktikan kebanggaan dan keagungannya.",
+                "stats": {
+                      "speed": 93,
+                      "stamina": 69,
+                      "power": 90,
+                      "guts": 81,
+                      "wit": 79
+                }
+          },
+          {
+                "category": "turf, medium, long, front-runner",
+                "image": "/uma/kitasanblack_icon.png",
+                "name": "Kitasan Black",
+                "feedback": "Gadis periang penuh semangat festival yang berlari di barisan depan dengan stamina kokoh tak kenal lelah.",
+                "stats": {
+                      "speed": 88,
+                      "stamina": 90,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, long, late-runner",
+                "image": "/uma/manhattancafe_icon.png",
+                "name": "Manhattan Cafe",
+                "feedback": "Gadis pemalu dan misterius yang kerap berbicara dengan 'sahabat' tak kasat mata di sampingnya saat berlari di jarak jauh.",
+                "stats": {
+                      "speed": 83,
+                      "stamina": 89,
+                      "power": 86,
+                      "guts": 87,
+                      "wit": 79
+                }
+          },
+          {
+                "category": "turf, mile, front-runner",
+                "image": "/uma/maruzensky_icon.png",
+                "name": "Maruzensky",
+                "feedback": "Senior modis bermobil mewah dengan selera retro yang melaju kencang bagai supercar tanpa tertandingi di depan.",
+                "stats": {
+                      "speed": 89,
+                      "stamina": 78,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/marveloussunday_icon.png",
+                "name": "Marvelous Sunday",
+                "feedback": "Gadis enerjik yang ingin mengubah setiap balapan menjadi pertunjukan ajaib penuh sukacita bagi seluruh penonton.",
+                "stats": {
+                      "speed": 83,
+                      "stamina": 89,
+                      "power": 86,
+                      "guts": 87,
+                      "wit": 79
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/matikanefukukitaru_icon.png",
+                "name": "Matikane Fukukitaru",
+                "feedback": "Gadis penggemar ramalan dan jimat keberuntungan yang selalu berusaha menghadirkan nasib baik ke garis finis.",
+                "stats": {
+                      "speed": 84,
+                      "stamina": 90,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner",
+                "image": "/uma/matikanetannhauser_icon.png",
+                "name": "Matikane Tannhauser",
+                "feedback": "Gadis pekerja keras yang sedikit ceroboh namun memiliki semangat juang tulus yang selalu didukung semua orang.",
+                "stats": {
+                      "speed": 85,
+                      "stamina": 94,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, long, front-runner, pace-runner",
+                "image": "/uma/mayanotopgun_icon.png",
+                "name": "Mayano Top Gun",
+                "feedback": "Gadis lincah bertopi penerbang yang cerdas membaca situasi lomba dan lihai beradaptasi dengan berbagai gaya lari.",
+                "stats": {
+                      "speed": 90,
+                      "stamina": 95,
+                      "power": 77,
+                      "guts": 82,
+                      "wit": 86
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/meishodoto_icon.png",
+                "name": "Meisho Doto",
+                "feedback": "Gadis penakut dan ceroboh yang sering kehilangan rasa percaya diri, namun memiliki kekuatan tersembunyi yang luar biasa.",
+                "stats": {
+                      "speed": 81,
+                      "stamina": 94,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner",
+                "image": "/uma/mejiroardan_icon.png",
+                "name": "Mejiro Ardan",
+                "feedback": "Nona bangsawan Mejiro berhati halus nan tegar yang bertanding dengan penuh keberanian meski memiliki kaki yang rapuh.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 83,
+                      "power": 77,
+                      "guts": 76,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner, end-runner",
+                "image": "/uma/mejirobright_icon.png",
+                "name": "Mejiro Bright",
+                "feedback": "Gadis tenang dan bertutur kata lambat yang menyimpan stamina cadangan luar biasa untuk menyusul di putaran akhir.",
+                "stats": {
+                      "speed": 84,
+                      "stamina": 96,
+                      "power": 98,
+                      "guts": 93,
+                      "wit": 76
+                }
+          },
+          {
+                "category": "turf, mile, medium, late-runner",
+                "image": "/uma/mejirodober_icon.png",
+                "name": "Mejiro Dober",
+                "feedback": "Gadis pemalu yang canggung di dekat pria, namun sangat fokus dan garang saat melancarkan akselerasi menyalip.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 77,
+                      "power": 86,
+                      "guts": 81,
+                      "wit": 79
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/mejiromcqueen_icon.png",
+                "name": "Mejiro McQueen",
+                "feedback": "Bintang klan Mejiro yang elegan dan bermartabat, penguasa jarak jauh dengan pengendalian tempo balap sempurna.",
+                "stats": {
+                      "speed": 82,
+                      "stamina": 95,
+                      "power": 77,
+                      "guts": 82,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, front-runner",
+                "image": "/uma/mejiropalmer_icon.png",
+                "name": "Mejiro Palmer",
+                "feedback": "Gadis riang yang memilih jalan kebebasannya sendiri dengan memimpin pelarian panjang di barisan terdepan.",
+                "stats": {
+                      "speed": 84,
+                      "stamina": 89,
+                      "power": 78,
+                      "guts": 83,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner, late-runner",
+                "image": "/uma/mejiroryan_icon.png",
+                "name": "Mejiro Ryan",
+                "feedback": "Gadis berotot atletis yang gemar berlatih kebugaran dan memancarkan aura sportivitas yang mengagumkan.",
+                "stats": {
+                      "speed": 89,
+                      "stamina": 82,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, front-runner",
+                "image": "/uma/mihonobourbon_icon.png",
+                "name": "Mihono Bourbon",
+                "feedback": "Gadis berkepribadian tenang seperti cyborg yang menjalani latihan ekstrem demi mengeksekusi ritme lari sempurna.",
+                "stats": {
+                      "speed": 90,
+                      "stamina": 79,
+                      "power": 77,
+                      "guts": 76,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, end-runner",
+                "image": "/uma/mrcb_icon.png",
+                "name": "Mr. C.B.",
+                "feedback": "Legenda Triple Crown berjiwa bebas yang memukau dunia dengan gaya lari santai di awal lalu menyapu dari posisi terakhir.",
+                "stats": {
+                      "speed": 80,
+                      "stamina": 96,
+                      "power": 91,
+                      "guts": 89,
+                      "wit": 76
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner, late-runner",
+                "image": "/uma/nakayamafesta_icon.png",
+                "name": "Nakayama Festa",
+                "feedback": "Petaruh berani yang menyukai sensasi ketegangan hidup dan selalu bertarung habis-habisan di saat-saat paling genting.",
+                "stats": {
+                      "speed": 92,
+                      "stamina": 82,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner",
+                "image": "/uma/naritabrian_icon.png",
+                "name": "Narita Brian",
+                "feedback": "Sang predator perkasa pemilik Triple Crown berdaya dorong mengerikan yang menatap garis finis tanpa kompromi.",
+                "stats": {
+                      "speed": 85,
+                      "stamina": 94,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, long, end-runner",
+                "image": "/uma/naritataishin_icon.png",
+                "name": "Narita Taishin",
+                "feedback": "Gadis bertubuh mungil berhati sensitif yang meluapkan emosi dan pembuktian dirinya melalui lesatan tajam di akhir lintasan.",
+                "stats": {
+                      "speed": 80,
+                      "stamina": 96,
+                      "power": 91,
+                      "guts": 89,
+                      "wit": 76
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/naritatoproad_icon.png",
+                "name": "Narita Top Road",
+                "feedback": "Gadis tulus dan rendah hati yang berlari dengan dukungan penuh para penggemar setia di jarak menengah dan jauh.",
+                "stats": {
+                      "speed": 83,
+                      "stamina": 93,
+                      "power": 78,
+                      "guts": 83,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/nicenature_icon.png",
+                "name": "Nice Nature",
+                "feedback": "Gadis bersahaja yang sering merendah tentang kemampuan dirinya namun selalu konsisten finis di barisan teratas.",
+                "stats": {
+                      "speed": 83,
+                      "stamina": 89,
+                      "power": 86,
+                      "guts": 87,
+                      "wit": 79
+                }
+          },
+          {
+                "category": "turf, sprint, mile, pace-runner, late-runner",
+                "image": "/uma/nishinoflower_icon.png",
+                "name": "Nishino Flower",
+                "feedback": "Gadis cilik yang lembut dan penuh kasih layaknya bunga kecil, melesat manis dan lincah di lintasan Sprint/Mile.",
+                "stats": {
+                      "speed": 97,
+                      "stamina": 73,
+                      "power": 90,
+                      "guts": 81,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, mile, medium, pace-runner, late-runner",
+                "image": "/uma/oguricap_icon.png",
+                "name": "Oguri Cap",
+                "feedback": "Pahlawan rakyat dari daerah yang rakus makan dan berstamina tak tertandingi di lintasan Dirt maupun Turf.",
+                "stats": {
+                      "speed": 89,
+                      "stamina": 82,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/riceshower_icon.png",
+                "name": "Rice Shower",
+                "feedback": "Pahlawan kecil bertopi mawar yang pantang menyerah menundukkan jarak terpanjang demi senyum orang-orang yang dicintainya.",
+                "stats": {
+                      "speed": 81,
+                      "stamina": 94,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, sprint, front-runner, pace-runner",
+                "image": "/uma/sakurabakushino_icon.png",
+                "name": "Sakura Bakushin O",
+                "feedback": "Ketua kelas bertingkah jenaka yang percaya bahwa kecepatan Sprint adalah satu-satunya jawaban untuk segala masalah di dunia.",
+                "stats": {
+                      "speed": 98,
+                      "stamina": 74,
+                      "power": 83,
+                      "guts": 75,
+                      "wit": 88
+                }
+          },
+          {
+                "category": "turf, mile, medium, pace-runner",
+                "image": "/uma/sakurachiyonoo_icon.png",
+                "name": "Sakura Chiyono O",
+                "feedback": "Gadis sopan yang rajin mencatat buku harian pelatihan demi mengejar jejak idola yang sangat dikaguminya.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 83,
+                      "power": 77,
+                      "guts": 76,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/sakuralaurel_icon.png",
+                "name": "Sakura Laurel",
+                "feedback": "Gadis periang nan optimis yang mengatasi kelemahan fisiknya dengan senyuman dan tekad menaklukkan musim semi.",
+                "stats": {
+                      "speed": 80,
+                      "stamina": 89,
+                      "power": 86,
+                      "guts": 87,
+                      "wit": 76
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/satonodiamond_icon.png",
+                "name": "Satono Diamond",
+                "feedback": "Nona muda konglomerat Satono yang bertekad mematahkan kutukan keluarga dan mempersembahkan trofi G1 bergengsi.",
+                "stats": {
+                      "speed": 80,
+                      "stamina": 89,
+                      "power": 86,
+                      "guts": 87,
+                      "wit": 76
+                }
+          },
+          {
+                "category": "turf, sprint, mile, pace-runner, late-runner",
+                "image": "/uma/seekingthepearl_icon.png",
+                "name": "Seeking the Pearl",
+                "feedback": "Seeking the Pearl adalah pelari tangguh dari Tracen Academy dengan keahlian di lintasan turf.",
+                "stats": {
+                      "speed": 94,
+                      "stamina": 73,
+                      "power": 90,
+                      "guts": 81,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, medium, long, front-runner",
+                "image": "/uma/seiunsky_icon.png",
+                "name": "Seiun Sky",
+                "feedback": "Pemancing santai yang terlihat malas namun jenius menyusun taktik licik untuk meloloskan diri di barisan depan.",
+                "stats": {
+                      "speed": 88,
+                      "stamina": 90,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "dirt, turf, sprint, mile, front-runner, pace-runner",
+                "image": "/uma/shinkowindy_icon.png",
+                "name": "Shinko Windy",
+                "feedback": "Gadis jahil bergigi taring yang suka menggigit orang lain, namun sangat gesit dan agresif saat bersaing di lintasan Dirt.",
+                "stats": {
+                      "speed": 98,
+                      "stamina": 73,
+                      "power": 86,
+                      "guts": 81,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, mile, medium, front-runner",
+                "image": "/uma/silencesuzuka_icon.png",
+                "name": "Silence Suzuka",
+                "feedback": "Pelari Front Runner legendaris yang selalu memacu dirinya melesat bebas di depan tanpa membiarkan siapa pun mendekat.",
+                "stats": {
+                      "speed": 90,
+                      "stamina": 79,
+                      "power": 77,
+                      "guts": 76,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/siriussymboli_icon.png",
+                "name": "Sirius Symboli",
+                "feedback": "Serigala penyendiri berjiwa pemberontak yang menjelajahi kancah balap Eropa dengan kebanggaan tinggi.",
+                "stats": {
+                      "speed": 81,
+                      "stamina": 94,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "dirt, mile, medium, front-runner",
+                "image": "/uma/smartfalcon_icon.png",
+                "name": "Smart Falcon",
+                "feedback": "Idola pop Tracen yang bertekad menjadi bintang nomor satu di panggung balap Dirt dengan tarian dan lari menawan.",
+                "stats": {
+                      "speed": 89,
+                      "stamina": 78,
+                      "power": 83,
+                      "guts": 79,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner",
+                "image": "/uma/specialweek_icon.png",
+                "name": "Special Week",
+                "feedback": "Gadis desa periang asal Hokkaido yang berlari dengan segenap jiwa demi impian menjadi Uma Musume terbaik di Jepang.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 93,
+                      "power": 86,
+                      "guts": 87,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner",
+                "image": "/uma/supercreek_icon.png",
+                "name": "Super Creek",
+                "feedback": "Gadis keibuan berhati lembut yang suka memanjakan pelatih dan sesama rekannya, penguasa stamina jarak jauh.",
+                "stats": {
+                      "speed": 84,
+                      "stamina": 94,
+                      "power": 79,
+                      "guts": 81,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, mile, medium, late-runner, end-runner",
+                "image": "/uma/sweeptosho_icon.png",
+                "name": "Sweep Tosho",
+                "feedback": "Gadis penyihir cilik yang keras kepala dan manja, mengandalkan sihir akselerasi kilat di tikungan akhir lintasan.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 83,
+                      "power": 98,
+                      "guts": 89,
+                      "wit": 75
+                }
+          },
+          {
+                "category": "turf, medium, long, late-runner",
+                "image": "/uma/symbolikriss_icon.png",
+                "name": "Symboli Kris S",
+                "feedback": "Sosok tegap dan pendiam yang memancarkan kewibawaan mutlak dan kedigdayaan fisik di lintasan rumput.",
+                "stats": {
+                      "speed": 81,
+                      "stamina": 90,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 77
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner",
+                "image": "/uma/symbolirudolf_icon.png",
+                "name": "Symboli Rudolf",
+                "feedback": "Ketua OSIS Tracen bergelar 'Kaisar' yang tak terkalahkan, menjunjung tinggi keadilan, martabat, dan keunggulan balap.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 95,
+                      "power": 85,
+                      "guts": 86,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner",
+                "image": "/uma/tmoperao_icon.png",
+                "name": "T.M. Opera O",
+                "feedback": "Raja panggung opera megah yang selalu menganggap setiap balapannya sebagai mahakarya teater termegah.",
+                "stats": {
+                      "speed": 88,
+                      "stamina": 94,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, sprint, mile, pace-runner",
+                "image": "/uma/taikishuttle_icon.png",
+                "name": "Taiki Shuttle",
+                "feedback": "Cowgirl ceria asal Amerika Serikat yang menembakkan kecepatan luar biasa di lintasan Mile bagai peluru pistol.",
+                "stats": {
+                      "speed": 90,
+                      "stamina": 73,
+                      "power": 82,
+                      "guts": 77,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner, end-runner",
+                "image": "/uma/tamamocross_icon.png",
+                "name": "Tamamo Cross",
+                "feedback": "Gadis petarung bertubuh kecil asal Kansai berjuluk 'Petir Putih' yang berlari sengit demi mengangkat derajat keluarganya.",
+                "stats": {
+                      "speed": 85,
+                      "stamina": 98,
+                      "power": 98,
+                      "guts": 93,
+                      "wit": 77
+                }
+          },
+          {
+                "category": "turf, mile, medium, late-runner",
+                "image": "/uma/taninogimlet_icon.png",
+                "name": "Tanino Gimlet",
+                "feedback": "Sosok flamboyan berkacamata yang suka meremukkan pagar dan menuangkan filosofi puitis ke dalam langkah pacunya.",
+                "stats": {
+                      "speed": 88,
+                      "stamina": 78,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner",
+                "image": "/uma/tokaiteio_icon.png",
+                "name": "Tokai Teio",
+                "feedback": "Gadis ajaib nan ceria yang menari lincah di lintasan dengan langkah 'Teio Step' untuk membuktikan kehebatannya.",
+                "stats": {
+                      "speed": 86,
+                      "stamina": 83,
+                      "power": 77,
+                      "guts": 76,
+                      "wit": 82
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner",
+                "image": "/uma/tosenjordan_icon.png",
+                "name": "Tosen Jordan",
+                "feedback": "Gadis gyaru modis yang gemar merawat kuku cantiknya namun pantang menyerah bersaing sengit di lintasan rumput.",
+                "stats": {
+                      "speed": 88,
+                      "stamina": 82,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner, late-runner",
+                "image": "/uma/tsurumarutsuyoshi_icon.png",
+                "name": "Tsurumaru Tsuyoshi",
+                "feedback": "Gadis periang yang tak kenal lelah melawan penyakit fisik demi bisa bersaing di panggung balap tertinggi.",
+                "stats": {
+                      "speed": 91,
+                      "stamina": 81,
+                      "power": 86,
+                      "guts": 81,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, mile, medium, front-runner",
+                "image": "/uma/twinturbo_icon.png",
+                "name": "Twin Turbo",
+                "feedback": "Pelari Front Runner nekat yang selalu tancap gas penuh sejak detik pertama tanpa memedulikan stamina.",
+                "stats": {
+                      "speed": 92,
+                      "stamina": 78,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 84
+                }
+          },
+          {
+                "category": "turf, mile, medium, late-runner",
+                "image": "/uma/vodka_icon.png",
+                "name": "Vodka",
+                "feedback": "Gadis pemberani bertipe Late Runner dengan akselerasi gagah yang memukau penonton di setiap tikungan.",
+                "stats": {
+                      "speed": 85,
+                      "stamina": 78,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 77
+                }
+          },
+          {
+                "category": "turf, medium, late-runner",
+                "image": "/uma/winningticket_icon.png",
+                "name": "Winning Ticket",
+                "feedback": "Gadis emosional yang mudah menangis terharu, berlari dengan sepenuh rasa cinta pada Derby dan kejayaan balap.",
+                "stats": {
+                      "speed": 88,
+                      "stamina": 78,
+                      "power": 87,
+                      "guts": 79,
+                      "wit": 80
+                }
+          },
+          {
+                "category": "dirt, mile, medium, pace-runner",
+                "image": "/uma/wonderacute_icon.png",
+                "name": "Wonder Acute",
+                "feedback": "Wonder Acute adalah pelari tangguh dari Tracen Academy dengan keahlian di lintasan dirt.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 81,
+                      "power": 82,
+                      "guts": 81,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, medium, pace-runner, late-runner",
+                "image": "/uma/yaenomuteki_icon.png",
+                "name": "Yaeno Muteki",
+                "feedback": "Praktisi seni bela diri yang menganggap lintasan balap sebagai dojo suci untuk mengasah disiplin dan jiwa raga.",
+                "stats": {
+                      "speed": 91,
+                      "stamina": 81,
+                      "power": 86,
+                      "guts": 81,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, mile, medium, pace-runner",
+                "image": "/uma/yamaninzephyr_icon.png",
+                "name": "Yamanin Zephyr",
+                "feedback": "Yamanin Zephyr adalah pelari tangguh dari Tracen Academy dengan keahlian di lintasan turf.",
+                "stats": {
+                      "speed": 85,
+                      "stamina": 82,
+                      "power": 79,
+                      "guts": 75,
+                      "wit": 81
+                }
+          },
+          {
+                "category": "turf, mile, medium, pace-runner",
+                "image": "/uma/yukinobijin_icon.png",
+                "name": "Yukino Bijin",
+                "feedback": "Gadis desa anggun dari Tohoku yang ingin belajar menjadi wanita perkasa dan memesona di ibu kota.",
+                "stats": {
+                      "speed": 87,
+                      "stamina": 81,
+                      "power": 78,
+                      "guts": 77,
+                      "wit": 83
+                }
+          },
+          {
+                "category": "turf, medium, long, pace-runner, late-runner",
+                "image": "/uma/zennorobroy_icon.png",
+                "name": "Zenno Rob Roy",
+                "feedback": "Pecinta buku literatur yang pendiam dan rajin, menemukan keberanian menjadi pahlawan di dunia nyata melalui balapan.",
+                "stats": {
+                      "speed": 85,
+                      "stamina": 94,
+                      "power": 87,
+                      "guts": 85,
+                      "wit": 81
+                }
+          }
+    ]
   }
 };
 
@@ -1581,6 +2706,22 @@ export const HSR_BACKGROUNDS: Record<string, string> = {
 };
 
 export const HSR_BACKGROUND = "/hsr/all.png";
+
+export const UMA_BACKGROUNDS: Record<string, string> = {
+  all: "/uma/bg.jpg",
+  turf: "/uma/bg.jpg",
+  dirt: "/uma/bg.jpg",
+  sprint: "/uma/bg.jpg",
+  mile: "/uma/bg.jpg",
+  medium: "/uma/bg.jpg",
+  long: "/uma/bg.jpg",
+  "front-runner": "/uma/bg.jpg",
+  "pace-runner": "/uma/bg.jpg",
+  "late-runner": "/uma/bg.jpg",
+  "end-runner": "/uma/bg.jpg",
+  preview: "/uma/bg.jpg",
+  default: "/uma/bg.jpg"
+};
 
 export const GALLERY_EVENTS: GalleryEvent[] = [
   {

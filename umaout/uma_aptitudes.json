@@ -1,0 +1,2034 @@
+[
+  {
+    "name": "Admire Vega",
+    "image": "/uma/admirevega_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "end"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "C",
+      "front": "G",
+      "pace": "G",
+      "late": "B",
+      "end": "A",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Agnes Digital",
+    "image": "/uma/agnesdigital_icon.png",
+    "surface": [
+      "turf",
+      "dirt"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "G",
+      "front": "G",
+      "pace": "A",
+      "late": "A",
+      "end": "B",
+      "turf": "A",
+      "dirt": "A"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Agnes Tachyon",
+    "image": "/uma/agnestachyon_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "D",
+      "medium": "A",
+      "long": "B",
+      "front": "E",
+      "pace": "A",
+      "late": "B",
+      "end": "F",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Air Groove",
+    "image": "/uma/airgroove_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "C",
+      "mile": "B",
+      "medium": "A",
+      "long": "E",
+      "front": "D",
+      "pace": "A",
+      "late": "A",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Air Shakur",
+    "image": "/uma/airshakur_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late",
+      "end"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "C",
+      "late": "A",
+      "end": "A",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Aston Machan",
+    "image": "/uma/astonmachan_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front",
+      "pace"
+    ],
+    "distance": [
+      "sprint"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "front": "A",
+      "pace": "A",
+      "late": "G",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Bamboo Memory",
+    "image": "/uma/bamboomemory_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "sprint",
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "A",
+      "medium": "C",
+      "long": "G",
+      "front": "G",
+      "pace": "E",
+      "late": "A",
+      "end": "C",
+      "turf": "A",
+      "dirt": "D"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Biko Pegasus",
+    "image": "/uma/bikopegasus_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Biwa Hayahide",
+    "image": "/uma/biwahayahide_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "E",
+      "pace": "A",
+      "late": "B",
+      "end": "E",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Copano Rickey",
+    "image": "/uma/copanorickey_icon.png",
+    "surface": [
+      "dirt"
+    ],
+    "style": [
+      "front",
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "C",
+      "mile": "A",
+      "medium": "A",
+      "long": "G",
+      "front": "A",
+      "pace": "A",
+      "late": "C",
+      "end": "G",
+      "turf": "F",
+      "dirt": "A"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Curren Chan",
+    "image": "/uma/currenchan_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "sprint"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "D",
+      "medium": "G",
+      "long": "G",
+      "front": "B",
+      "pace": "A",
+      "late": "E",
+      "end": "G",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Daiichi Ruby",
+    "image": "/uma/daiichiruby_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Daitaku Helios",
+    "image": "/uma/daitakuhelios_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front",
+      "pace"
+    ],
+    "distance": [
+      "mile"
+    ],
+    "aptitudes": {
+      "turf": "A",
+      "dirt": "G",
+      "sprint": "B",
+      "mile": "A",
+      "medium": "B",
+      "long": "E",
+      "front": "A",
+      "pace": "A",
+      "late": "G",
+      "end": "G"
+    },
+    "source": "Game8"
+  },
+  {
+    "name": "Daiwa Scarlet",
+    "image": "/uma/daiwascarlet_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front",
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "front": "A",
+      "pace": "A",
+      "late": "E",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Eishin Flash",
+    "image": "/uma/eishinflash_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "B",
+      "late": "A",
+      "end": "C",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "El Condor Pasa",
+    "image": "/uma/elcondorpasa_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "front": "E",
+      "pace": "A",
+      "late": "A",
+      "end": "C",
+      "turf": "A",
+      "dirt": "B"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Fine Motion",
+    "image": "/uma/finemotion_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "front": "D",
+      "pace": "A",
+      "late": "E",
+      "end": "C",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Fuji Kiseki",
+    "image": "/uma/fujikiseki_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "B",
+      "mile": "A",
+      "medium": "B",
+      "long": "E",
+      "front": "C",
+      "pace": "A",
+      "late": "C",
+      "end": "G",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Gold City",
+    "image": "/uma/goldcity_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "A",
+      "medium": "B",
+      "long": "B",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "F",
+      "turf": "A",
+      "dirt": "D"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Gold Ship",
+    "image": "/uma/goldship_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "end"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "B",
+      "late": "B",
+      "end": "A",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Grass Wonder",
+    "image": "/uma/grasswonder_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "mile",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "A",
+      "medium": "B",
+      "long": "A",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "F",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Haru Urara",
+    "image": "/uma/haruurara_icon.png",
+    "surface": [
+      "dirt"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "sprint"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "front": "G",
+      "pace": "G",
+      "late": "A",
+      "end": "B",
+      "turf": "G",
+      "dirt": "A"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Hishi Akebono",
+    "image": "/uma/hishiakebono_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "sprint"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "B",
+      "medium": "F",
+      "long": "G",
+      "front": "B",
+      "pace": "A",
+      "late": "C",
+      "end": "G",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Hishi Amazon",
+    "image": "/uma/hishiamazon_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "end"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "front": "G",
+      "pace": "B",
+      "late": "C",
+      "end": "A",
+      "turf": "A",
+      "dirt": "E"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Hokko Tarumae",
+    "image": "/uma/hokkotarumae_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Ikuno Dictus",
+    "image": "/uma/ikunodictus_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Inari One",
+    "image": "/uma/inarione_icon.png",
+    "surface": [
+      "turf",
+      "dirt"
+    ],
+    "style": [
+      "end"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "B",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "B",
+      "late": "B",
+      "end": "A",
+      "turf": "A",
+      "dirt": "A"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Ines Fujin",
+    "image": "/uma/inesfujin_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "A",
+      "medium": "A",
+      "long": "C",
+      "front": "A",
+      "pace": "C",
+      "late": "G",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "K.S. Miracle",
+    "image": "/uma/ksmiracle_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Kawakami Princess",
+    "image": "/uma/kawakamiprincess_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "D",
+      "mile": "B",
+      "medium": "A",
+      "long": "F",
+      "front": "G",
+      "pace": "C",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "King Halo",
+    "image": "/uma/kinghalo_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "sprint"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "B",
+      "medium": "B",
+      "long": "C",
+      "front": "G",
+      "pace": "B",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Kitasan Black",
+    "image": "/uma/kitasanblack_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "A",
+      "pace": "B",
+      "late": "C",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Manhattan Cafe",
+    "image": "/uma/manhattancafe_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "B",
+      "long": "A",
+      "front": "G",
+      "pace": "C",
+      "late": "A",
+      "end": "C",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Maruzensky",
+    "image": "/uma/maruzensky_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "B",
+      "mile": "A",
+      "medium": "B",
+      "long": "C",
+      "front": "A",
+      "pace": "E",
+      "late": "G",
+      "end": "G",
+      "turf": "A",
+      "dirt": "D"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Marvelous Sunday",
+    "image": "/uma/marveloussunday_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Matikane Fukukitaru",
+    "image": "/uma/matikanefukukitaru_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "B",
+      "late": "A",
+      "end": "F",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Matikane Tannhauser",
+    "image": "/uma/matikanetannhauser_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "D",
+      "medium": "A",
+      "long": "A",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "E",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mayano Top Gun",
+    "image": "/uma/mayanotopgun_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front",
+      "pace"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "D",
+      "mile": "D",
+      "medium": "A",
+      "long": "A",
+      "front": "A",
+      "pace": "A",
+      "late": "B",
+      "end": "B",
+      "turf": "A",
+      "dirt": "E"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Meisho Doto",
+    "image": "/uma/meishodoto_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "front": "F",
+      "pace": "A",
+      "late": "B",
+      "end": "E",
+      "turf": "A",
+      "dirt": "E"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mejiro Ardan",
+    "image": "/uma/mejiroardan_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "B",
+      "medium": "A",
+      "long": "D",
+      "front": "C",
+      "pace": "A",
+      "late": "D",
+      "end": "G",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mejiro Bright",
+    "image": "/uma/mejirobright_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late",
+      "end"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "D",
+      "late": "A",
+      "end": "A",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mejiro Dober",
+    "image": "/uma/mejirodober_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "front": "C",
+      "pace": "B",
+      "late": "A",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mejiro McQueen",
+    "image": "/uma/mejiromcqueen_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "front": "B",
+      "pace": "A",
+      "late": "D",
+      "end": "F",
+      "turf": "A",
+      "dirt": "E"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mejiro Palmer",
+    "image": "/uma/mejiropalmer_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "A",
+      "front": "A",
+      "pace": "E",
+      "late": "F",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mejiro Ryan",
+    "image": "/uma/mejiroryan_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "F",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mihono Bourbon",
+    "image": "/uma/mihonobourbon_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "C",
+      "mile": "B",
+      "medium": "A",
+      "long": "B",
+      "front": "A",
+      "pace": "E",
+      "late": "G",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Mr. C.B.",
+    "image": "/uma/mrcb_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Nakayama Festa",
+    "image": "/uma/nakayamafesta_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "B",
+      "front": "G",
+      "pace": "A",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Narita Brian",
+    "image": "/uma/naritabrian_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "B",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "A",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Narita Taishin",
+    "image": "/uma/naritataishin_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "end"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "D",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "F",
+      "late": "B",
+      "end": "A",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Narita Top Road",
+    "image": "/uma/naritatoproad_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Nice Nature",
+    "image": "/uma/nicenature_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "F",
+      "pace": "B",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Nishino Flower",
+    "image": "/uma/nishinoflower_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "sprint",
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "G",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Oguri Cap",
+    "image": "/uma/oguricap_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "B",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "B"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Rice Shower",
+    "image": "/uma/riceshower_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "B",
+      "pace": "A",
+      "late": "C",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Sakura Bakushin O",
+    "image": "/uma/sakurabakushino_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front",
+      "pace"
+    ],
+    "distance": [
+      "sprint"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "B",
+      "medium": "G",
+      "long": "G",
+      "front": "A",
+      "pace": "A",
+      "late": "F",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Sakura Chiyono O",
+    "image": "/uma/sakurachiyonoo_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "front": "B",
+      "pace": "A",
+      "late": "F",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Sakura Laurel",
+    "image": "/uma/sakuralaurel_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Satono Diamond",
+    "image": "/uma/satonodiamond_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "B",
+      "late": "A",
+      "end": "D",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Seeking the Pearl",
+    "image": "/uma/seekingthepearl_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "sprint",
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "front": "C",
+      "pace": "A",
+      "late": "A",
+      "end": "B",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Seiun Sky",
+    "image": "/uma/seiunsky_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "A",
+      "pace": "B",
+      "late": "D",
+      "end": "E",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Shinko Windy",
+    "image": "/uma/shinkowindy_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Silence Suzuka",
+    "image": "/uma/silencesuzuka_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "front": "A",
+      "pace": "C",
+      "late": "E",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Sirius Symboli",
+    "image": "/uma/siriussymboli_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Smart Falcon",
+    "image": "/uma/smartfalcon_icon.png",
+    "surface": [
+      "dirt"
+    ],
+    "style": [
+      "front"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "B",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "front": "A",
+      "pace": "D",
+      "late": "G",
+      "end": "G",
+      "turf": "E",
+      "dirt": "A"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Special Week",
+    "image": "/uma/specialweek_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "A",
+      "late": "A",
+      "end": "C",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Super Creek",
+    "image": "/uma/supercreek_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "G",
+      "medium": "A",
+      "long": "A",
+      "front": "D",
+      "pace": "A",
+      "late": "B",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Sweep Tosho",
+    "image": "/uma/sweeptosho_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late",
+      "end"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "A",
+      "medium": "A",
+      "long": "D",
+      "front": "G",
+      "pace": "G",
+      "late": "A",
+      "end": "A",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Symboli Kris S",
+    "image": "/uma/symbolikriss_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Symboli Rudolf",
+    "image": "/uma/symbolirudolf_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "E",
+      "mile": "C",
+      "medium": "A",
+      "long": "A",
+      "front": "B",
+      "pace": "A",
+      "late": "A",
+      "end": "C",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "T.M. Opera O",
+    "image": "/uma/tmoperao_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "front": "C",
+      "pace": "A",
+      "late": "A",
+      "end": "G",
+      "turf": "A",
+      "dirt": "E"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Taiki Shuttle",
+    "image": "/uma/taikishuttle_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "sprint",
+      "mile"
+    ],
+    "aptitudes": {
+      "sprint": "A",
+      "mile": "A",
+      "medium": "E",
+      "long": "G",
+      "front": "C",
+      "pace": "A",
+      "late": "E",
+      "end": "G",
+      "turf": "A",
+      "dirt": "B"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Tamamo Cross",
+    "image": "/uma/tamamocross_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late",
+      "end"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "A",
+      "late": "A",
+      "end": "A",
+      "turf": "A",
+      "dirt": "F"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Tanino Gimlet",
+    "image": "/uma/taninogimlet_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Tokai Teio",
+    "image": "/uma/tokaiteio_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "E",
+      "medium": "A",
+      "long": "B",
+      "front": "D",
+      "pace": "A",
+      "late": "C",
+      "end": "E",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Tosen Jordan",
+    "image": "/uma/tosenjordan_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "B",
+      "front": "C",
+      "pace": "A",
+      "late": "B",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Tsurumaru Tsuyoshi",
+    "image": "/uma/tsurumarutsuyoshi_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Twin Turbo",
+    "image": "/uma/twinturbo_icon.png",
+    "surface": [],
+    "style": [],
+    "distance": [],
+    "aptitudes": null,
+    "source": "BELUM ADA DATA"
+  },
+  {
+    "name": "Vodka",
+    "image": "/uma/vodka_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "F",
+      "mile": "A",
+      "medium": "A",
+      "long": "F",
+      "front": "C",
+      "pace": "B",
+      "late": "A",
+      "end": "F",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Winning Ticket",
+    "image": "/uma/winningticket_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "late"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "F",
+      "medium": "A",
+      "long": "B",
+      "front": "G",
+      "pace": "B",
+      "late": "A",
+      "end": "G",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Wonder Acute",
+    "image": "/uma/wonderacute_icon.png",
+    "surface": [
+      "dirt"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "front": "C",
+      "pace": "A",
+      "late": "C",
+      "end": "E",
+      "turf": "G",
+      "dirt": "A"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Yaeno Muteki",
+    "image": "/uma/yaenomuteki_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "B",
+      "medium": "A",
+      "long": "E",
+      "front": "F",
+      "pace": "A",
+      "late": "A",
+      "end": "G",
+      "turf": "A",
+      "dirt": "E"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Yamanin Zephyr",
+    "image": "/uma/yamaninzephyr_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "B",
+      "mile": "A",
+      "medium": "A",
+      "long": "G",
+      "front": "E",
+      "pace": "A",
+      "late": "C",
+      "end": "G",
+      "turf": "A",
+      "dirt": "D"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Yukino Bijin",
+    "image": "/uma/yukinobijin_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace"
+    ],
+    "distance": [
+      "mile",
+      "medium"
+    ],
+    "aptitudes": {
+      "sprint": "D",
+      "mile": "A",
+      "medium": "A",
+      "long": "E",
+      "front": "C",
+      "pace": "A",
+      "late": "F",
+      "end": "G",
+      "turf": "A",
+      "dirt": "B"
+    },
+    "source": "master.mdb (kartu dasar)"
+  },
+  {
+    "name": "Zenno Rob Roy",
+    "image": "/uma/zennorobroy_icon.png",
+    "surface": [
+      "turf"
+    ],
+    "style": [
+      "pace",
+      "late"
+    ],
+    "distance": [
+      "medium",
+      "long"
+    ],
+    "aptitudes": {
+      "sprint": "G",
+      "mile": "E",
+      "medium": "A",
+      "long": "A",
+      "front": "G",
+      "pace": "A",
+      "late": "A",
+      "end": "E",
+      "turf": "A",
+      "dirt": "G"
+    },
+    "source": "master.mdb (kartu dasar)"
+  }
+]

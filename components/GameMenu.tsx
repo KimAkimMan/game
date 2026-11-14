@@ -57,6 +57,14 @@ export default function GameMenu({ onSelectGame }: GameMenuProps) {
       gameId: null,
       desc: "Bangkit kembali di dunia pasca-bencana bersama Resonator.",
     },
+    {
+      title: "Uma Musume Pretty Derby",
+      genre: "Training Simulation RPG",
+      image: "/uma/bg-default.jpg",
+      href: "#testimonials",
+      gameId: "uma",
+      desc: "Latih para gadis kuda berbakat menuju panggung Twinkle Series.",
+    },
   ];
 
   const handleCardClick = (gameId: string | null, href: string) => {

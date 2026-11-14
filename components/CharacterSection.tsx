@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect, useMemo } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useState, useRef, useEffect, useMemo, useCallback } from "react";
+import { ChevronLeft, ChevronRight, Heart } from "lucide-react";
 import {
   GAME_SECTIONS,
   ZZZ_BACKGROUNDS,
@@ -9,9 +9,13 @@ import {
   BLUE_ARCHIVE_BACKGROUNDS,
   HSR_BACKGROUNDS,
   HSR_BACKGROUND,
+  UMA_BACKGROUNDS,
   CharacterItem,
   FilterOption,
 } from "@/lib/gameData";
+import { favoriteService } from "@/lib/services/favoriteService";
+import SearchBar from "./community/SearchBar";
+import CharacterModal from "./community/CharacterModal";
 
 interface CharacterSectionProps {
   selectedGame?: string;
@@ -24,15 +28,30 @@ export default function CharacterSection({
 }: CharacterSectionProps) {
   const [activeGame, setActiveGame] = useState<string>(selectedGame);
   const [activeFilter, setActiveFilter] = useState<string>("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [searchAllGames, setSearchAllGames] = useState<boolean>(false);
+  const [favorites, setFavorites] = useState<string[]>([]);
+  const [modalCharacter, setModalCharacter] = useState<{
+    char: CharacterItem;
+    gameId: string;
+    gameTitle: string;
+  } | null>(null);
+
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
+
+  // Load favorites
+  useEffect(() => {
+    favoriteService.getFavorites().then(setFavorites);
+  }, []);
 
   // Sync with prop when parent updates it (e.g. from hero or menu clicks)
   useEffect(() => {
     if (selectedGame && GAME_SECTIONS[selectedGame]) {
       setActiveGame(selectedGame);
       setActiveFilter("all");
+      setSearchQuery("");
     }
   }, [selectedGame]);
 
@@ -42,35 +61,70 @@ export default function CharacterSection({
   const handleGameChange = (gameId: string) => {
     setActiveGame(gameId);
     setActiveFilter("all");
+    setSearchQuery("");
     if (onSelectGame) {
       onSelectGame(gameId);
     }
   };
 
-  // Filter characters by active category
-  const filteredCharacters = useMemo(() => {
-    if (!currentGame || !currentGame.characters) return [];
-    if (activeFilter.toLowerCase() === "all") {
-      return currentGame.characters;
-    }
-    const filterKey = activeFilter.toLowerCase().trim();
-    return currentGame.characters.filter((char) => {
-      const charCat = (char.category || "").toLowerCase().trim();
-      return (
-        charCat === filterKey ||
-        charCat.includes(filterKey) ||
-        filterKey.includes(charCat)
-      );
-    });
-  }, [currentGame, activeFilter]);
+  const handleSearchChange = useCallback((query: string, searchAll: boolean) => {
+    setSearchQuery(query);
+    setSearchAllGames(searchAll);
+  }, []);
 
-  // Reset scroll when filter or game changes
+  // Filter characters by active category & search
+  const filteredCharacters = useMemo(() => {
+    let pool: { char: CharacterItem; gameId: string; gameTitle: string }[] = [];
+
+    if (searchQuery && searchAllGames) {
+      // Search across all games
+      Object.entries(GAME_SECTIONS).forEach(([gId, gData]) => {
+        gData.characters.forEach((c) => {
+          pool.push({ char: c, gameId: gId, gameTitle: gData.title });
+        });
+      });
+    } else {
+      // Current game pool
+      pool = (currentGame.characters || []).map((c) => ({
+        char: c,
+        gameId: activeGame,
+        gameTitle: currentGame.title,
+      }));
+    }
+
+    // Apply category filter if not searching all games
+    if (!searchAllGames && activeFilter.toLowerCase() !== "all") {
+      const filterKey = activeFilter.toLowerCase().trim();
+      pool = pool.filter((item) => {
+        const charCat = (item.char.category || "").toLowerCase().trim();
+        return (
+          charCat === filterKey ||
+          charCat.includes(filterKey) ||
+          filterKey.includes(charCat)
+        );
+      });
+    }
+
+    // Apply search query
+    if (searchQuery) {
+      const q = searchQuery.toLowerCase();
+      pool = pool.filter(
+        (item) =>
+          item.char.name.toLowerCase().includes(q) ||
+          item.char.feedback.toLowerCase().includes(q)
+      );
+    }
+
+    return pool;
+  }, [currentGame, activeGame, activeFilter, searchQuery, searchAllGames]);
+
+  // Reset scroll when filter, query, or game changes
   useEffect(() => {
     if (scrollContainerRef.current) {
       scrollContainerRef.current.scrollTo({ left: 0, behavior: "smooth" });
     }
     checkScroll();
-  }, [activeGame, activeFilter]);
+  }, [activeGame, activeFilter, searchQuery, searchAllGames]);
 
   // Check scroll boundary for disabling buttons
   const checkScroll = () => {
@@ -84,7 +138,6 @@ export default function CharacterSection({
     const el = scrollContainerRef.current;
     if (!el) return;
     el.addEventListener("scroll", checkScroll, { passive: true });
-    // Run initial check after render
     const timer = setTimeout(checkScroll, 100);
     window.addEventListener("resize", checkScroll);
     return () => {
@@ -104,11 +157,16 @@ export default function CharacterSection({
     });
   };
 
+  const handleToggleFavorite = async (charId: string) => {
+    const res = await favoriteService.toggleFavorite(charId);
+    setFavorites(res.favorites);
+  };
+
   // Determine current active background across all games
   const currentGameBgSrc = useMemo(() => {
     const key = activeFilter.toLowerCase().trim();
 
-    // 1. Genshin Impact (sesuai nama region / all)
+    // 1. Genshin Impact
     if (activeGame === "genshin") {
       if (key.includes("mondstadt") || key.includes("monstad")) return GENSHIN_BACKGROUNDS.mondstadt;
       if (key.includes("liyue")) return GENSHIN_BACKGROUNDS.liyue;
@@ -120,7 +178,7 @@ export default function CharacterSection({
       return GENSHIN_BACKGROUNDS.all;
     }
 
-    // 2. Zenless Zone Zero (sesuai faksi / squad)
+    // 2. Zenless Zone Zero
     if (activeGame === "zenles") {
       if (key.includes("cunning")) return ZZZ_BACKGROUNDS.cunning;
       if (key.includes("calydon") || key.includes("sons")) return ZZZ_BACKGROUNDS.sons;
@@ -135,7 +193,7 @@ export default function CharacterSection({
       return ZZZ_BACKGROUNDS.all;
     }
 
-    // 3. Blue Archive (koleksi background BA)
+    // 3. Blue Archive
     if (activeGame === "bluearchive") {
       if (key.includes("abydos")) return BLUE_ARCHIVE_BACKGROUNDS.abydos;
       if (key.includes("gehenna")) return BLUE_ARCHIVE_BACKGROUNDS.gehenna;
@@ -151,7 +209,7 @@ export default function CharacterSection({
       return BLUE_ARCHIVE_BACKGROUNDS.all;
     }
 
-    // 4. Honkai Star-Rail (sesuai faksi/dunia HSR)
+    // 4. Honkai Star-Rail
     if (activeGame === "honkai") {
       if (key.includes("astral")) return HSR_BACKGROUNDS.astral;
       if (key.includes("stelaron") || key.includes("hunter")) return HSR_BACKGROUNDS.stelaron;
@@ -166,6 +224,11 @@ export default function CharacterSection({
       return HSR_BACKGROUNDS.all;
     }
 
+    // 5. Uma Musume Pretty Derby
+    if (activeGame === "uma") {
+      return UMA_BACKGROUNDS[key] || UMA_BACKGROUNDS.all;
+    }
+
     return null;
   }, [activeGame, activeFilter]);
 
@@ -176,6 +239,7 @@ export default function CharacterSection({
     { id: "zenles", label: "Zenless Zone Zero" },
     { id: "bluearchive", label: "Blue Archive" },
     { id: "honkai", label: "Honkai Star-Rail" },
+    { id: "uma", label: "Uma Musume" },
   ];
 
   return (
@@ -196,14 +260,13 @@ export default function CharacterSection({
             alt="Game Background Banner"
             className="w-full h-full object-cover object-top opacity-55 transition-opacity duration-700 filter brightness-95"
           />
-          {/* Dark gradient overlay to keep text and character cards crisp */}
           <div className="absolute inset-0 bg-gradient-to-b from-[#11131a]/85 via-[#11131a]/55 to-[#11131a]/95" />
         </div>
       )}
 
       <div className="relative z-10 max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-8">
+        <div className="text-center max-w-2xl mx-auto mb-6">
           <span
             className={`text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full ${
               hasBg
@@ -222,8 +285,14 @@ export default function CharacterSection({
           </h2>
         </div>
 
+        {/* Live Search Bar */}
+        <SearchBar
+          onSearchChange={handleSearchChange}
+          currentGameTitle={currentGame.title}
+        />
+
         {/* Game Selection Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-10">
+        <div className="flex flex-wrap items-center justify-center gap-2.5 sm:gap-3 mb-8">
           {gameButtons.map((g) => {
             const isActive = activeGame === g.id;
             return (
@@ -251,30 +320,32 @@ export default function CharacterSection({
               hasBg ? "text-white drop-shadow-md" : "text-[#252525]"
             }`}
           >
-            {currentGame.title}
+            {searchAllGames ? "Pencarian di Semua Game" : currentGame.title}
           </h3>
 
           {/* Filter Pills */}
-          <div className="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto">
-            {currentGame.filters.map((f: FilterOption) => {
-              const isActive = activeFilter.toLowerCase() === f.id.toLowerCase();
-              return (
-                <button
-                  key={f.id}
-                  onClick={() => setActiveFilter(f.id)}
-                  className={`px-4 py-1.5 rounded-full text-xs sm:text-[13px] font-semibold transition-all duration-200 cursor-pointer ${
-                    isActive
-                      ? "bg-[#007BFF] text-white shadow-md shadow-blue-500/25 scale-105"
-                      : hasBg
-                      ? "bg-black/35 hover:bg-black/55 text-white/90 border border-white/20 backdrop-blur-md shadow-sm"
-                      : "bg-white hover:bg-blue-50 text-gray-600 hover:text-blue-600 border border-gray-200 shadow-xs"
-                  }`}
-                >
-                  {f.label}
-                </button>
-              );
-            })}
-          </div>
+          {!searchAllGames && (
+            <div className="flex flex-wrap items-center justify-center gap-2 max-w-4xl mx-auto">
+              {currentGame.filters.map((f: FilterOption) => {
+                const isActive = activeFilter.toLowerCase() === f.id.toLowerCase();
+                return (
+                  <button
+                    key={f.id}
+                    onClick={() => setActiveFilter(f.id)}
+                    className={`px-4 py-1.5 rounded-full text-xs sm:text-[13px] font-semibold transition-all duration-200 cursor-pointer ${
+                      isActive
+                        ? "bg-[#007BFF] text-white shadow-md shadow-blue-500/25 scale-105"
+                        : hasBg
+                        ? "bg-black/35 hover:bg-black/55 text-white/90 border border-white/20 backdrop-blur-md shadow-sm"
+                        : "bg-white hover:bg-blue-50 text-gray-600 hover:text-blue-600 border border-gray-200 shadow-xs"
+                    }`}
+                  >
+                    {f.label}
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         {/* Character Carousel Container */}
@@ -315,23 +386,51 @@ export default function CharacterSection({
             style={{ scrollSnapType: "x mandatory" }}
           >
             {filteredCharacters.length > 0 ? (
-              filteredCharacters.map((char: CharacterItem, idx: number) => {
+              filteredCharacters.map(({ char, gameId, gameTitle }, idx: number) => {
+                const charId = `${gameId}:${char.name}`;
+                const isFav = favorites.includes(charId);
+
                 return (
                   <div
                     key={`${char.name}-${idx}`}
                     style={{ scrollSnapAlign: "start" }}
-                    className={`w-[270px] sm:w-[290px] h-[380px] shrink-0 rounded-[28px] pt-7 pb-5 px-4 flex flex-col items-center justify-start transition-all duration-300 hover:-translate-y-1.5 cursor-pointer select-none ${
+                    onClick={() =>
+                      setModalCharacter({
+                        char,
+                        gameId,
+                        gameTitle,
+                      })
+                    }
+                    className={`relative w-[270px] sm:w-[290px] h-[380px] shrink-0 rounded-[28px] pt-7 pb-5 px-4 flex flex-col items-center justify-start transition-all duration-300 hover:-translate-y-1.5 cursor-pointer select-none group ${
                       hasBg
                         ? "bg-white/85 backdrop-blur-md border border-white/60 shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:shadow-[0_14px_34px_rgba(0,0,0,0.4)] text-[#151515]"
                         : "bg-white border border-gray-100 shadow-[0_10px_30px_rgba(0,0,0,0.1)] hover:shadow-[0_16px_36px_rgba(0,0,0,0.15)] text-[#252525]"
                     }`}
                   >
+                    {/* Favorite Button (Absolute, does NOT change card height) */}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleToggleFavorite(charId);
+                      }}
+                      className={`absolute top-3.5 right-3.5 w-8 h-8 rounded-full flex items-center justify-center transition-all z-20 cursor-pointer ${
+                        isFav
+                          ? "bg-rose-500 text-white shadow-md shadow-rose-500/30"
+                          : "bg-black/10 hover:bg-black/20 text-gray-600 hover:text-rose-500"
+                      }`}
+                      title={isFav ? "Hapus favorit" : "Tambah favorit"}
+                    >
+                      <Heart
+                        className={`w-4 h-4 ${isFav ? "fill-white text-white" : ""}`}
+                      />
+                    </button>
+
                     {/* Character Avatar Image (Pas seperti versi sebelumnya: 175px, object-cover, shadow) */}
                     <img
                       src={char.image}
                       alt={char.name}
                       loading="lazy"
-                      className="w-[175px] h-[175px] rounded-full object-cover shadow-[0_4px_16px_rgba(0,0,0,0.18)] mb-3.5 shrink-0 hover:scale-105 transition-transform duration-300"
+                      className="w-[175px] h-[175px] rounded-full object-cover shadow-[0_4px_16px_rgba(0,0,0,0.18)] mb-3.5 shrink-0 group-hover:scale-105 transition-transform duration-300"
                     />
 
                     {/* Character Name */}
@@ -350,7 +449,7 @@ export default function CharacterSection({
               })
             ) : (
               <div className="w-full py-16 text-center text-gray-400">
-                <p>Tidak ada karakter untuk kategori ini.</p>
+                <p>Tidak ada karakter yang cocok dengan pencarian.</p>
               </div>
             )}
           </div>
@@ -363,10 +462,25 @@ export default function CharacterSection({
               hasBg ? "text-gray-300" : "text-gray-400"
             }`}
           >
-            Menampilkan {filteredCharacters.length} karakter / preview
+            Menampilkan {filteredCharacters.length} karakter
           </p>
         </div>
       </div>
+
+      {/* Detail Modal */}
+      {modalCharacter && (
+        <CharacterModal
+          character={modalCharacter.char}
+          gameId={modalCharacter.gameId}
+          gameTitle={modalCharacter.gameTitle}
+          onClose={() => setModalCharacter(null)}
+          onFavoriteChange={(charId, isFav) => {
+            setFavorites((prev) =>
+              isFav ? [...prev, charId] : prev.filter((id) => id !== charId)
+            );
+          }}
+        />
+      )}
     </section>
   );
 }
