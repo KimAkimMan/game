@@ -1565,7 +1565,22 @@ export const BLUE_ARCHIVE_BACKGROUNDS: Record<string, string> = {
   default: "/ba/1359968.png"
 };
 
-export const HSR_BACKGROUND = "/iseng/hsrbg.jpg";
+export const HSR_BACKGROUNDS: Record<string, string> = {
+  all: "/hsr/all.png",
+  preview: "/hsr/thumb-1920-646830.png",
+  astral: "/hsr/astral.png",
+  stelaron: "/hsr/thumb-1920-1351341.jpeg",
+  hertaspace: "/hsr/astropolis.png",
+  jario: "/hsr/jario.png",
+  xianzhou: "/hsr/xianjou.png",
+  penacony: "/hsr/penacony.png",
+  cosmic: "/hsr/planarcadia.png",
+  ipc: "/hsr/thumb-1920-1351973.jpeg",
+  amphoreus: "/hsr/ampho.png",
+  default: "/hsr/all.png"
+};
+
+export const HSR_BACKGROUND = "/hsr/all.png";
 
 export const GALLERY_EVENTS: GalleryEvent[] = [
   {

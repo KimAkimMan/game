@@ -7,6 +7,7 @@ import {
   ZZZ_BACKGROUNDS,
   GENSHIN_BACKGROUNDS,
   BLUE_ARCHIVE_BACKGROUNDS,
+  HSR_BACKGROUNDS,
   HSR_BACKGROUND,
   CharacterItem,
   FilterOption,
@@ -150,9 +151,19 @@ export default function CharacterSection({
       return BLUE_ARCHIVE_BACKGROUNDS.all;
     }
 
-    // 4. Honkai Star-Rail
+    // 4. Honkai Star-Rail (sesuai faksi/dunia HSR)
     if (activeGame === "honkai") {
-      return HSR_BACKGROUND;
+      if (key.includes("astral")) return HSR_BACKGROUNDS.astral;
+      if (key.includes("stelaron") || key.includes("hunter")) return HSR_BACKGROUNDS.stelaron;
+      if (key.includes("herta") || key.includes("space")) return HSR_BACKGROUNDS.hertaspace;
+      if (key.includes("jario") || key.includes("jarilo") || key.includes("belobog")) return HSR_BACKGROUNDS.jario;
+      if (key.includes("xianzhou") || key.includes("xianjou") || key.includes("luofu")) return HSR_BACKGROUNDS.xianzhou;
+      if (key.includes("penacony")) return HSR_BACKGROUNDS.penacony;
+      if (key.includes("cosmic")) return HSR_BACKGROUNDS.cosmic;
+      if (key.includes("ipc")) return HSR_BACKGROUNDS.ipc;
+      if (key.includes("amphoreus") || key.includes("ampho")) return HSR_BACKGROUNDS.amphoreus;
+      if (key === "preview") return HSR_BACKGROUNDS.preview;
+      return HSR_BACKGROUNDS.all;
     }
 
     return null;
